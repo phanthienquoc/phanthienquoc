@@ -195,14 +195,10 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                I'm passionate about creating exceptional digital experiences using modern web technologies. 
-                My expertise spans across frontend development with React and Vue.js, backend development 
-                with Node.js, and database management with both SQL and NoSQL solutions.
+                {personalInfo.sortDescription}
               </p>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                I believe in writing clean, maintainable code and staying updated with the latest 
-                industry trends. I enjoy collaborating with cross-functional teams and contributing 
-                to projects that make a real impact.
+                {personalInfo.sortDesrcription_2}
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
