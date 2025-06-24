@@ -8,7 +8,7 @@ export const personalInfo: PersonalInfo = {
   email: 'phanthienquoc@outlook.com', // Update with actual email
   phone: '+84 78787 56 88', // Update with actual phone
   linkedin: 'https://www.linkedin.com/in/phan-thien-quoc',
-  github: 'https://github.com/phan-thien-quoc', // Update with actual GitHub
+  github: 'https://github.com/phanthienquoc', // Update with actual GitHub
   summary: `Passionate software developer with expertise in modern web technologies. 
     Experienced in building scalable applications and working with cross-functional teams 
     to deliver high-quality solutions.`, // Update with LinkedIn summary
