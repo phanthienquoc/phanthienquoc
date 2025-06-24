@@ -37,7 +37,7 @@ export const education: Education[] = [
   {
     institution: 'VNUHCM - University of Science', // Update from LinkedIn
     degree: 'College of Science', // Update from LinkedIn
-    field: 'Information Technologies'', // Update from LinkedIn
+    field: 'Information Technologies', // Update from LinkedIn
     period: '2013 - 2016', // Update from LinkedIn
     location: 'Ho Chi Minh City, Vietnam'
   }
