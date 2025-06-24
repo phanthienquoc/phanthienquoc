@@ -12,8 +12,9 @@ export const personalInfo: PersonalInfo = {
   summary: `Passionate software developer with expertise in modern web technologies. 
     Experienced in building scalable applications and working with cross-functional teams 
     to deliver high-quality solutions.`, // Update with LinkedIn summary
-  sortDescription: ``,
-  sortDescription_2: ``,
+  sortDescription: `I'm passionate about creating exceptional digital experiences using modern web technologies. My expertise spans across frontend development with React and Vue.js, backend development with Node.js, and database management with both SQL and NoSQL solutions.`,
+  sortDescription_2: `
+I believe in writing clean, maintainable code and staying updated with the latest industry trends. I enjoy collaborating with cross-functional teams and contributing to projects that make a real impact.`,
   profileImage: 'https://media.licdn.com/dms/image/v2/C5103AQH8MndqZ4-ing/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1559565048480?e=1756339200&v=beta&t=CKgtj9H9sIfGoyvVCNNZkE33mHJkEO9FgDY0uWnOzkU'
 };
 
