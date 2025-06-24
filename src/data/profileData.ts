@@ -39,7 +39,7 @@ export const education: Education[] = [
     degree: 'College of Science', // Update from LinkedIn
     field: 'Information Technologies'', // Update from LinkedIn
     period: '2013 - 2016', // Update from LinkedIn
-    location: 'Ho Chi Minh City, Vietnam',
+    location: 'Ho Chi Minh City, Vietnam'
   }
 ];
 
