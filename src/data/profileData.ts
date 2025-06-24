@@ -2,17 +2,17 @@ import { PersonalInfo, Experience, Education, Skill, Project, Certification } fr
 
 // TODO: Update this with information from LinkedIn profile: https://www.linkedin.com/in/phan-thien-quoc
 export const personalInfo: PersonalInfo = {
-  name: 'Phan Thien Quoc',
+  name: 'Quoc Phan',
   title: 'Frontend Developer | Full-Stack Capable',
   location: 'Ho Chi Minh City, Vietnam',
-  email: 'phan.thien.quoc@example.com', // Update with actual email
-  phone: '+84 XXX XXX XXX', // Update with actual phone
+  email: 'phanthienquoc@outlook.com', // Update with actual email
+  phone: '+84 78787 56 88', // Update with actual phone
   linkedin: 'https://www.linkedin.com/in/phan-thien-quoc',
   github: 'https://github.com/phan-thien-quoc', // Update with actual GitHub
   summary: `Passionate software developer with expertise in modern web technologies. 
     Experienced in building scalable applications and working with cross-functional teams 
     to deliver high-quality solutions.`, // Update with LinkedIn summary
-  profileImage: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400'
+  profileImage: 'https://media.licdn.com/dms/image/v2/C5103AQH8MndqZ4-ing/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1559565048480?e=1756339200&v=beta&t=CKgtj9H9sIfGoyvVCNNZkE33mHJkEO9FgDY0uWnOzkU'
 };
 
 // TODO: Update with actual work experience from LinkedIn
