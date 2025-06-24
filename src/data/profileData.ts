@@ -12,6 +12,8 @@ export const personalInfo: PersonalInfo = {
   summary: `Passionate software developer with expertise in modern web technologies. 
     Experienced in building scalable applications and working with cross-functional teams 
     to deliver high-quality solutions.`, // Update with LinkedIn summary
+  sortDescription: ``,
+  sortDescription_2: ``,
   profileImage: 'https://media.licdn.com/dms/image/v2/C5103AQH8MndqZ4-ing/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1559565048480?e=1756339200&v=beta&t=CKgtj9H9sIfGoyvVCNNZkE33mHJkEO9FgDY0uWnOzkU'
 };
 
