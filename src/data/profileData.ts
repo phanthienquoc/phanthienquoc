@@ -35,14 +35,11 @@ export const experiences: Experience[] = [
 // TODO: Update with actual education from LinkedIn
 export const education: Education[] = [
   {
-    institution: 'University Name', // Update from LinkedIn
-    degree: 'Bachelor of Science', // Update from LinkedIn
-    field: 'Computer Science', // Update from LinkedIn
-    period: '2019 - 2023', // Update from LinkedIn
+    institution: 'VNUHCM - University of Science', // Update from LinkedIn
+    degree: 'College of Science', // Update from LinkedIn
+    field: 'Information Technologies'', // Update from LinkedIn
+    period: '2013 - 2016', // Update from LinkedIn
     location: 'Ho Chi Minh City, Vietnam',
-    achievements: [
-      'Relevant coursework or achievements from LinkedIn'
-    ]
   }
 ];
 
