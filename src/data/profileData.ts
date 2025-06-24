@@ -45,18 +45,15 @@ export const education: Education[] = [
 
 // TODO: Update skills based on LinkedIn profile
 export const skills: Skill[] = [
-  { name: 'React', level: 90, color: 'bg-blue-500', category: 'frontend' },
-  { name: 'TypeScript', level: 85, color: 'bg-blue-600', category: 'frontend' },
-  { name: 'JavaScript', level: 95, color: 'bg-yellow-500', category: 'frontend' },
-  { name: 'Next.js', level: 80, color: 'bg-gray-800', category: 'frontend' },
-  { name: 'Vue.js', level: 75, color: 'bg-green-500', category: 'frontend' },
-  { name: 'Node.js', level: 80, color: 'bg-green-600', category: 'backend' },
+  { name: 'React', level: 80, color: 'bg-blue-500', category: 'frontend' },
+  { name: 'TypeScript', level: 70, color: 'bg-blue-600', category: 'frontend' },
+  { name: 'JavaScript', level: 70, color: 'bg-yellow-500', category: 'frontend' },
+  { name: 'Next.js', level: 65, color: 'bg-gray-800', category: 'frontend' },
   { name: 'Express.js', level: 75, color: 'bg-gray-700', category: 'backend' },
-  { name: 'MongoDB', level: 70, color: 'bg-green-500', category: 'database' },
-  { name: 'PostgreSQL', level: 75, color: 'bg-blue-700', category: 'database' },
-  { name: 'Git', level: 90, color: 'bg-red-500', category: 'tools' },
-  { name: 'Docker', level: 65, color: 'bg-blue-400', category: 'tools' },
-  { name: 'AWS', level: 60, color: 'bg-orange-500', category: 'tools' }
+  { name: 'Mysql', level: 50, color: 'bg-green-500', category: 'database' },
+  { name: 'Git', level: 75, color: 'bg-red-500', category: 'tools' },
+  { name: 'Docker', level: 40, color: 'bg-blue-400', category: 'tools' },
+  { name: 'AWS', level: 30, color: 'bg-orange-500', category: 'tools' }
 ];
 
 // TODO: Update with actual projects
