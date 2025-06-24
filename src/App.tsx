@@ -151,7 +151,7 @@ function App() {
                 isMenuOpen ? 'translate-x-0' : 'translate-x-full'
               }`}
             >
-              <div className="p-6 pt-8">
+              <div className="p-6 pt-8  bg-white">
                 <div className="space-y-1">
                   {navigationItems.map((item, index) => (
                     <button
