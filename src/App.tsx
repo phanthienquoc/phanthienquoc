@@ -198,7 +198,7 @@ function App() {
                 {personalInfo.sortDescription}
               </p>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                {personalInfo.sortDesrcription_2}
+                {personalInfo.sortDescription_2}
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
