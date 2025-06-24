@@ -48,6 +48,36 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close menu when clicking outside or pressing escape
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (isMenuOpen && !target.closest('.mobile-menu-container')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('keydown', handleEscape);
+      document.addEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -86,29 +116,95 @@ function App() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-2 relative z-50 mobile-menu-container"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              <div className="relative w-6 h-6">
+                <span
+                  className={`absolute top-1/2 left-1/2 w-6 h-0.5 bg-slate-800 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? 'rotate-45' : '-translate-y-1.5'
+                  }`}
+                />
+                <span
+                  className={`absolute top-1/2 left-1/2 w-6 h-0.5 bg-slate-800 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? 'opacity-0' : 'opacity-100'
+                  }`}
+                />
+                <span
+                  className={`absolute top-1/2 left-1/2 w-6 h-0.5 bg-slate-800 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out ${
+                    isMenuOpen ? '-rotate-45' : 'translate-y-1.5'
+                  }`}
+                />
+              </div>
             </button>
           </div>
 
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
-              <div className="px-4 py-2 space-y-1">
-                {navigationItems.map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
-                  >
-                    {item}
-                  </button>
-                ))}
+          {/* Mobile Navigation Overlay */}
+          <div
+            className={`md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ease-in-out mobile-menu-container ${
+              isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+            }`}
+            style={{ top: '64px' }}
+          >
+            <div
+              className={`absolute top-0 right-0 w-80 max-w-[90vw] h-full bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
+                isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+              }`}
+            >
+              <div className="p-6 pt-8">
+                <div className="space-y-1">
+                  {navigationItems.map((item, index) => (
+                    <button
+                      key={item}
+                      onClick={() => scrollToSection(item.toLowerCase())}
+                      className={`block w-full text-left px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 ease-in-out transform hover:scale-105 ${
+                        activeSection === item.toLowerCase()
+                          ? 'text-blue-600 bg-blue-50 border-l-4 border-blue-600'
+                          : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      }`}
+                      style={{
+                        animationDelay: `${index * 50}ms`,
+                        animation: isMenuOpen ? 'slideInRight 0.3s ease-out forwards' : 'none'
+                      }}
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+                
+                {/* Contact info in mobile menu */}
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <div className="space-y-4">
+                    <a
+                      href={`mailto:${personalInfo.email}`}
+                      className="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      <Mail size={20} />
+                      <span className="text-sm">{personalInfo.email}</span>
+                    </a>
+                    <a
+                      href={personalInfo.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      <Linkedin size={20} />
+                      <span className="text-sm">LinkedIn</span>
+                    </a>
+                    <a
+                      href={personalInfo.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      <Github size={20} />
+                      <span className="text-sm">GitHub</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </nav>
 

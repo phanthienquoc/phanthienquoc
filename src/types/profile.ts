@@ -7,6 +7,8 @@ export interface PersonalInfo {
   linkedin: string;
   github: string;
   summary: string;
+  sortDescription: string;
+  sortDescription_2: string;
   profileImage: string;
 }
 
