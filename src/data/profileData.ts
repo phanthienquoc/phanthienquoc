@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: 'Aviator Application',
     period:"March 2017 – May 2019",
-    company:"FPT SoftWare"
+    company:"FPT SoftWare",
     description: `Application support for flight attendants and pilots have information about flights info, forecast.`,
     tech: ['WPF', 'XAML', 'HMTL5', 'JavaScript'],
     featured: true
@@ -84,7 +84,41 @@ export const projects: Project[] = [
     description: 'E-commerce web sell furniture scandinavian',
     tech: ["Joomla","RedShop Extension",  "HTML5", "CSS3", "Javascript","Jquery"],
     featured: true
-  }
+  },
+{
+    title: 'Kontormoebler',
+    period:"August 2019 – December 2019",
+    company:"Redweb",
+    description: 'E-commerce web sell furniture scandinavian',
+    tech: ["Joomla","RedShop Extension",  "HTML5", "CSS3", "Javascript","Jquery"],
+    featured: true
+  },
+{
+    title: 'Ultimate Money(Payment)',
+    period:"December 2019 – July 2023",
+    company:"Inspirelab",
+    description: 'Platform to help merchant manage crypto, transfer, receive crypto currency on ETH, XRP, SOLANA',
+    tech: ["Reactjs","MaterialUI","Antd", "Tanstack ReactQuery", "SCSS", "Javascript", "webpack"],
+    featured: true
+  },
+{
+    title: 'Portalsite',
+    period:"October 2024 – March 2025",
+    company:"AIOT",
+    role: "teamlead",
+    description: 'Portal helps to tracking weather alert systems using XML, linking weather warnings to geographic locations for improved disaster management. Utilized live camera feeds and geospatial data for effective public safety monitoring',
+    tech: ["Reactjs","Expressjs","Vite","MySQL","react-leaflet", "tailwindcss","AWS: S3,Cloudfront","Docker","SCSS", "Javascript","BasicAuth"],
+    featured: true
+  },
+{
+    title: 'TURN',
+    period:"March 2025 – May 2025",
+    company:"AIOT",
+    role: "Supporter",
+    description: 'Booking Page to help customer make booking.',
+    tech: ["Reactjs","webpack","Antd", "tailwindcss","Docker","SCSS", "Javascript"],
+    featured: true
+  },
 
 ];
 
