@@ -63,20 +63,15 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     title: 'Aviator Application',
-    description: `Application support for flight attendants
-and pilots have information about flights
-info, forecast.`,
+    description: `Application support for flight attendants and pilots have information about flights info, forecast.`,
     tech: ['WPF', 'XAML', 'HMTL5', 'JavaScript'],
     featured: true
   },
   {
-    title: 'Project Name 2',
-    description: 'Description of project from LinkedIn or portfolio',
-    tech: ['Vue.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/phan-thien-quoc/project2',
-    live: 'https://project2-demo.com',
-    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
-    featured: true
+    title: 'MLNG-TA Mobile Application',
+    description: 'Mobile application perform process electrical permit to work.',
+    tech: ["Extjs 6.5", "Oath", "HTML5", "CSS3", "Javascript",
+"Jquery","Odic Client", "Bootstrap"],
   },
   {
     title: 'Project Name 3',
