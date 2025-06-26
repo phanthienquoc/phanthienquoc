@@ -67,7 +67,6 @@ export const projects: Project[] = [
 and pilots have information about flights
 info, forecast.`,
     tech: ['WPF', 'XAML', 'HMTL5', 'JavaScript'],
-   
     featured: true
   },
   {
