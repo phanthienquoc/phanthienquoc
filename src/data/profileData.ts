@@ -86,14 +86,6 @@ export const projects: Project[] = [
     featured: true
   },
 {
-    title: 'Kontormoebler',
-    period:"August 2019 – December 2019",
-    company:"Redweb",
-    description: 'E-commerce web sell furniture scandinavian',
-    tech: ["Joomla","RedShop Extension",  "HTML5", "CSS3", "Javascript","Jquery"],
-    featured: true
-  },
-{
     title: 'Ultimate Money(Payment)',
     period:"December 2019 – July 2023",
     company:"Inspirelab",
