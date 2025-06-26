@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: 'Aviator Application',
     period:"March 2017 – May 2019",
-    company:"FPT SoftWare."
+    company:"FPT SoftWare"
     description: `Application support for flight attendants and pilots have information about flights info, forecast.`,
     tech: ['WPF', 'XAML', 'HMTL5', 'JavaScript'],
     featured: true
