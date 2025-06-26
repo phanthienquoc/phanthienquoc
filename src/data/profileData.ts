@@ -71,7 +71,7 @@ export const projects: Project[] = [
     title: 'MLNG-TA Mobile Application',
     description: 'Mobile application perform process electrical permit to work.',
     tech: ["Extjs 6.5", "Oath", "HTML5", "CSS3", "Javascript","Jquery","Odic Client", "Bootstrap"],
-        featured: true
+    featured: true
   },
   {
     title: 'Project Name 3',
