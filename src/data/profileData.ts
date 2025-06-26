@@ -25,10 +25,16 @@ export const experiences: Experience[] = [
     role: 'Software Developer', // Update from LinkedIn
     period: '2017 - 2019', // Update from LinkedIn
     location: 'Ho Chi Minh City, Vietnam',
-    description: 'Description of role and responsibilities from LinkedIn profile.',
-    achievements: [
-      
-    ]
+    description: '',
+    achievements: []
+  },
+  {
+    company: 'RedWeb', // Update from LinkedIn
+    role: 'Frontend Developer', // Update from LinkedIn
+    period: 'May 2019 - December 2019', // Update from LinkedIn
+    location: 'Ho Chi Minh City, Vietnam',
+    description: '',
+    achievements: []
   },
   // Add more experiences from LinkedIn profile
 ];
