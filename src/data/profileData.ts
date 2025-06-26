@@ -76,7 +76,16 @@ export const projects: Project[] = [
     description: 'Mobile application perform process electrical permit to work.',
     tech: ["Sencha Touch","Extjs 6.5", "Oath", "HTML5", "CSS3", "Javascript","Jquery","Odic Client", "Bootstrap"],
     featured: true
+  },
+{
+    title: 'Kontormoebler',
+    period:"August 2019 – December 2019",
+    company:"Redweb",
+    description: 'E-commerce web sell furniture scandinavian',
+    tech: ["Joomla","RedShop Extension",  "HTML5", "CSS3", "Javascript","Jquery"],
+    featured: true
   }
+
 ];
 
 // TODO: Update with certifications from LinkedIn
