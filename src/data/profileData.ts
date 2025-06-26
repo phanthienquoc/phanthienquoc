@@ -21,15 +21,13 @@ I believe in writing clean, maintainable code and staying updated with the lates
 // TODO: Update with actual work experience from LinkedIn
 export const experiences: Experience[] = [
   {
-    company: 'Company Name', // Update from LinkedIn
+    company: 'FPT Software', // Update from LinkedIn
     role: 'Software Developer', // Update from LinkedIn
     period: '2023 - Present', // Update from LinkedIn
     location: 'Ho Chi Minh City, Vietnam',
     description: 'Description of role and responsibilities from LinkedIn profile.',
     achievements: [
-      'Achievement 1 from LinkedIn',
-      'Achievement 2 from LinkedIn',
-      'Achievement 3 from LinkedIn'
+      
     ]
   },
   // Add more experiences from LinkedIn profile
