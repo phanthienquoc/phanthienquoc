@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
   {
     company: 'FPT Software', // Update from LinkedIn
     role: 'Software Developer', // Update from LinkedIn
-    period: '2023 - Present', // Update from LinkedIn
+    period: '2017 - 2019', // Update from LinkedIn
     location: 'Ho Chi Minh City, Vietnam',
     description: 'Description of role and responsibilities from LinkedIn profile.',
     achievements: [
