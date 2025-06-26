@@ -36,6 +36,14 @@ export const experiences: Experience[] = [
     description: '',
     achievements: []
   },
+    {
+    company: 'Inspirelab', // Update from LinkedIn
+    role: 'Frontend Developer', // Update from LinkedIn
+    period: 'May 2019 - December 2019', // Update from LinkedIn
+    location: 'Ho Chi Minh City, Vietnam',
+    description: '',
+    achievements: []
+  },
   // Add more experiences from LinkedIn profile
 ];
 
