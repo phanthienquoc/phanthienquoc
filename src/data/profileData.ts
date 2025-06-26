@@ -62,10 +62,11 @@ export const skills: Skill[] = [
 // TODO: Update with actual projects
 export const projects: Project[] = [
   {
-    title: 'Project Name 1',
-    description: 'Description of project from LinkedIn or portfolio',
-    tech: ['React', 'TypeScript', 'Node.js'],
-    github: 'https://github.com/phan-thien-quoc/project1',
+    title: 'Aviator Application',
+    description: `Application support for flight attendants
+and pilots have information about flights
+info, forecast.`,
+    tech: ['WPF', 'XAML', 'HMTL5', 'JavaScript'],
     live: 'https://project1-demo.com',
     image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
