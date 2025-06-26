@@ -72,8 +72,7 @@ export const projects: Project[] = [
   {
     title: 'MLNG Mobile Application',
     period:"March 2017 – May 2019",
-    company:"FPT SoftWare - Onsiter",
-    customer:"Malaysia PET-ICT",
+    company:"FPT SoftWare - Onsiter- Malaysia PET-ICT",
     description: 'Mobile application perform process electrical permit to work.',
     tech: ["Sencha Touch","Extjs 6.5", "Oath", "HTML5", "CSS3", "Javascript","Jquery","Odic Client", "Bootstrap"],
     featured: true
